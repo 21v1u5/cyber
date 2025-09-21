@@ -1,0 +1,42 @@
+2.1 Segurança das operações
+    se preocupa com as práticas diárias necessárias para primeiro implantar e depois manter um sistema seguro.Todas as redes estão vulneráveis a ataques se o planejamento, implmentação e manutenção de rede não seguirem as práticas de segurança operacional.
+
+    a equipe que configura e realiza os test de seg deve ter conhecimento significativo em sege rede nestas áreas:
+        Os
+        programação básica
+        protocolos de rede
+        vuln de rede e mitigação de riscos
+        hardening do dispositivo
+        firewalls 
+        IPSs
+
+2.2 Testando e avaliando a segurança da rede
+    server para testar a segurança da rede durante a implementação. Os testes de seg fornecem info sobre várias tarefas administrativas, como análise de risco e planjemento de contingência. Depois de que uma rede estiver totalmente integrada e operacional, é realizado um test de avaliação de seg (ST&E). Um ST&E é um exame das medidas de proteção que são colocadas em uma rede operacional.
+
+    Os objetivos da ST&E incluem o seguinte:
+        Descruba falhas de design, implementação e operação que poderiam levar à violação da política de seg
+        Determine a adequação de mecanismo de seg, garantias e propriedades do dispositivo para aplicar a política de seg.
+        Avaliar o grau de consistência entre a documentação do sistema e sua implementação
+
+
+2.3 Tipos de testes de rede
+    Depois que a rede tiver operacional, voce deve acessar seu status e seg. Muitos testes de seg podem ser realiazados para avaliar o status operacional da rede:
+        - test de penetração
+        - varredura de rede
+            inclui software que pode fazer o ping em computadores, verificar portas TCP de escuta e exibi quais tipos de recursos estão disponíveis na rede
+        - varredura de vuln
+            incluir soft que pode detectar fraquezas potenciais nos sistemas testados. Podendo ser config incorreta, senhas em branco ou padrão ou potenciais para ataque de dos
+        - Cracking de senha
+        - Revisão de log
+            Os adms de sistema devem revisar os logs de seg para identificar ameaças de sef em potencial.
+        - Verificadores de integridade
+            Um sistema de verificação de integridade detecta e relatórios sobre mudança no sistema
+        - Detecção de vírus
+
+2.4 Aplicando resultados de test de rede
+    -para definir atividades de mitigação para abordar vuln identificadas
+    -como referência para rastrear o progresso de uma organização em entender aos requisitos de seg
+    -avaliar o estado de implementação de requisitos de seg do sistema
+    -realizar análise de custos e benefícios para melhorias na seg da rede
+    -melhorar ouras atividades, como avaliações de risco, certificação e autorização (C&A) e esforçoes de melhoria de desempenho
+    -Como ponto de referência para ação corretiva

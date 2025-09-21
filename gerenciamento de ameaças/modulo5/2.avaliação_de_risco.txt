@@ -1,0 +1,89 @@
+1. tipos de fonte de ameaça
+    A avaliação de ameaças é a base para a avaliação de riscos. Uma ameaça é o potencial que uma vulnerabilidade será identificada e explorada, enquanto um vetor de ameaças é o caminho que um invasor utiliza para afetar o alvo.
+
+    Os tipos de fonte de ameaça são categorizados da seguinte forma e podem ser internos ou externos.
+        -Adversarial:
+            ameaças de indivíduos, grupos, organizações ou nações.
+        -Acidental:  
+            ações que ocorrem sem uma intenção mal-intencionada.
+        -Estrutural:  
+            falhas de equipamento e software.
+        -Ambiental:  
+            desastres externos que podem ser naturais ou causados pelo homem, como -incêndios e inundações.
+
+        
+
+2. metodologias de avaliação de riscos
+    As empresas avaliam e examinam seus riscos operacionais ao realizar uma avaliação de risco para garantir que o gerenciamento de riscos atenda a todos os objetivos comericais.
+
+        Tentar determinar a probabilidade de um ataque de uma fonte de ameaça humana pode ser difícil e pode envolver a avaliação do nível de habilidade, motivação, oportunidade e tamanho.
+
+        Ao avaliar a vulnerabilidade, fatores como facilidade de descoberta, capacidade de exploração, reconhecimento e detecção de intrusão desempenham um papel importante. Use uma combinação de estimativa e dados históricos para fornecer a probabilidade mais precisa de um evento ocorrer.
+
+        Por fim, determine a magnitude do impacto. Uma simples medida de impacto pode variar de muito baixo a muito alto ou de um impacto insignificante a um impacto catastrófico.
+
+
+3. Análise de risco 
+    Análise de risco é o processo de analisar os perigos representados por eventos naturais e provocados por humanos aos ativos de uma empresa. Um usuário realiza uma identificação de ativo para ajudar a determinar quais ativos serão protegidos
+
+    Uma análise de risco tem quatro objetivos:  
+        a. identificar ativos e seu valor
+        b. Identificar vuln e ameaças
+        c. Quantificar a probabilidade e o impacto das ameaças Identificadas
+        d. Equilibrar o impacto de ameaça com relação ao custo da contramedida
+
+    existem 2 tipos de abordagem de análise de risco:
+        - Análise de risco Quantitativa:
+            A análise de risco quantitativa é o processo de determinar objetivamente o impacto de um evento usando métricas e modelos. Uma análise quantitativa depende de informações e tendências históricas para prever o desempenho futuro. O resultado da análise é um valor.
+
+            Uma análise Quantitativa atribui números para o processo de análise de risco. O valor do ativo é o custo de reposição do ativo. O valor de um ativo pode ser medido também pela receita adquirida com o uso do ativo.
+
+            O fator de exposição(EF) é um valor subjetivo expresso como uma % do servidor de arquivos perdido devido a uma ameaça específica. Se ocorrer um PT, o EF é igual a 1.0(100%) (valor total do ativo x EF)
+
+            A ARO(annualized rate of occurrence, taxa anualizada de ocorrencia) é a probabilidade de uma perda ocorrer durante o ano. Uma ARO pode ser maior que 100%, se uma perda puder ocorrer mais de uma vez no ano.
+
+            O cálculo de ALE(annual loss expectancy, expectativa de perda anual) da à gerencia uma noção do quanto deverá gastar para proteger o ativo.
+
+        - Análise de risco qualitativa:
+            A análise qualitativa de riscos usa opiniões e cenários que descrevem a probabilidade de uma ameaça contra seu impacto. Por exemplo, a ameaça de uma falha no servidor pode ser provável, mas seu impacto pode ser apenas marginal.
+
+            Uma matriz de riscos é uma ferramenta que ajuda a priorizar riscos para determinar para quais organizações a empresa precisa desenvolver uma resposta. Os resultados podem ser classificados e usados como um guia para determinar se a empresa executa alguma ação.
+
+            Quando a matriz de risco é codificada por cores, como  mostrado aqui,  ela é chamada de mapa de calor de risco.
+
+    exemplo pratico
+
+        analise de risco    
+            usando risco quantitativo
+                A análise de risco quantitativa é o processo de determinar objetivamente o impacto de um evento usando métricas e modelos. Uma análise quantitativa depende de informações e tendências históricas para prever o desempenho futuro. O resultado da análise é um valor.
+
+                    1.calcular o valor do ativo
+                        (custo inicial + valor organizacional + valor publico)
+
+                    2. calcular o fator de exposição (EF)
+                        valor da perda de um ativo / valor total do ativo
+
+                    3. Calcular a expectativa de perda única (SLE)
+                        valor total do ativo * EF
+
+                    4. Calcular a taxa de ocorrencia anualizada (ARO)
+                    
+                    5. Calcular a expectativa de perda anualizada (ALE)
+                        12 meses / frequencia da ocorrencia em meses
+                        = SLE * ARO
+
+            Usando analise qualitativa
+                Uma análise qualitativa compara o impacto de uma ameaça com a probabilidade de sua ocorrência e usa rótulos como baixo, médio ou alto. O impacto de um evento é uma medida da perda quando uma ameaça explora uma vulnerabilidade. A probabilidade é de que o evento de ameaça ocorra.
+
+4. mitigação de risco
+    A mitigação envolve reduzir a gravidade da perda ou a probabilidade de que a perda ocorra. Muitos controles técnicos mitigam riscos, incluindo os sistemas de autenticação, permissões de arquivos e firewalls.
+        - aceitar o risco e realivaliar periodicamente
+            Uma estratégia de curto prazo é aceitar o risco, o que implica na criação de planos de contingência para esse risco. Pessoas e empresas têm que aceitar o risco diariamente.
+        - reduzir o risco com a implementação de controles
+            Metodologias modernas reduzem o risco com o desenvolvimento de software de forma incremental e proporcionando atualizações e patches regulares para enfrentar vulnerabilidades e configurações incorretas.
+        - evitar o risco alterando totalemnte a abordagem
+            Um bom plano de mitigação de risco pode incluir duas ou mais estratégias.
+        - transferir o risco para terceiros
+            A terceirização de serviços, a compra de seguros ou a compra de contratos de manutenção são todos exemplos de transferência de risco. Contratação de especialistas para realizar tarefas críticas para reduzir o risco pode ser uma boa decisão e produzir melhores resultados com menos investimento no longo prazo.
+
+

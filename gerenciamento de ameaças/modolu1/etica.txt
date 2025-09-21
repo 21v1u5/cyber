@@ -1,0 +1,77 @@
+etica é uma pequena voz na sua cabeça que diz o que é certo ou errado
+
+podem ter difrentees pespectivas:
+    etica utilitarista :  Isso se baseia no princípio norteador de que a consequência de uma ação é o fator mais importante para determinar se a ação é moral ou não.
+
+    abordagem de direitos: é guiada pelo princípio que afirma que um indivíduo tem o direito de fazer suas próprias escolhas, que não podem ser violadas pela decisão de outro. Essa decisão deve respeitar e considerar os direitos fundamentais do indivíduo.
+
+    abordagem de bem comum: A abordagem de bem comum propõe que as ações éticas são aquelas que beneficiam toda a comunidade.
+
+
+10 mandamentos da etica em informática
+    com sede em woshinnton, o computer ethics institute é um recurso para identificar, avaliar e responder a questões éticas em todo o setor de Ti.
+
+    CEi foi uma das primeiras empresas a reconhecer os problemas de politicas eticas e publicas provenientes do crescimento rapido da area de Ti
+
+    eles criaram 10 mandamento:
+        1.Não usará um computador para prejudicar outras pessoais
+        2. não interferiras no trabalho de computação de outras pessoais
+        3. nao bisbilhotarás em arquivos de computador de outras pessoais
+        4. nao usaras um computador para roubar
+        5.nao usaras um computador para dar falso testemunho
+        6.nao copiaras ou usaras software proprietario pelo qual nao pagaste
+        7.nao usaras os recursos do computador de outras pessoas sem autorização ou compesanção adequada
+        8.nao se apropriaras da produção intelectual de outras pessoas
+        9.pensaras nas consequencias sociais do programa que estás editando ou do sistema que estás projetando
+        10.sempre usarás um computador de forma a assegurar consideração e respeito por seus companheiros
+
+
+cibercrime
+    crime por computador
+    crime assistido por computador
+    crime incidente no computador
+
+
+Leis ciberneticas
+    as leis proíbem comportamentos indesejados. Nos EUA, ha 3 fontes principais de leis e regulamentações, todas envolvendo espectos de segurança de computadores.
+        lei estatutária
+        lei administrativo
+        direito comum
+
+
+um ato de gerenciamento federal da informação(FISMA)
+    Em 2002, o Congresso dos EUA criou o FISMA para abranger os sistemas de TI das agências federais. Especificamente, o FISMA estipula que as agências federais devem criar um programa de segurança da informação que inclua:
+
+        -Avaliações de risco
+        -Inventário anual dos sistemas de TI
+        -Políticas e procedimentos para reduzir o risco
+        -Programas de treinamento
+        -Teste e avaliação de todos os controles dos sistemas de TI
+        -Procedimento de resposta a incidente
+        -Continuidade do plano de operações
+
+
+leis especificas do setor   
+    finanças -> lei gramm-leach-bliley
+    contabilidade corporativa -> Lei Sarbanes-Oxley(SOX)
+    cartão de credito -> Padrão de segurança de dados do setor de cartões de pagamento (PCI DSS)
+    criptogragia -> 
+
+
+leis de notificação de violação de segurança
+    lei de privacidade das comunicações eletronicas(ECPA) -> privacidade no local de trabalho
+    fraude de computador e abuso(CFAA) -> proibe o acesso nao autorizado a sistemas de computador do governo
+    lei que protege a privacidade das informações pessoasi de um funcionário contra compatilhamento (GLBA)
+
+
+leis de privacidade
+    ato de privacidade
+    lei de liberdade de informação(FOIA)
+    registros de educação de familia e ato de privacidade(FERPA)
+    lei de proteção da privacidade on-line de crianças dos EUA(COPPA)
+    lei de proteção de crianças na internet nos EUA (CIPA)
+    video privacy protection act(VPPA)
+    lei de portabilidade e responsabilidade dos seguros de saude(HIPAA)
+    projeto de lei do senado da california(SB 1386)
+    politicas de privacidade
+    avaliação de impacto da privacidade(PIA)

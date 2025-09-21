@@ -1,0 +1,52 @@
+
+1. Comunicação de inteligência de rede
+
+organização:
+    SANS
+    Os recursos do institudo Sysadmin, Audit, Network, Security (SANS) são amplamente gratuitos mediante a solicitação e incluem:
+        - O internet Storm Center - popular sistem de alerta antecipado de internet
+        - NewsBites - o resumo semanal de artigos de notícias sobre segurança de computadores
+        - @RISK - o resumo semanal de vetores de ataque recém-descobertos, vulnerabilidades com explorações ativas e explicações de como ataques recentes funcionam
+        - Alerta de segurança em flash
+        - Sala de leitura - mais de 1200 trabalhos de pesquisa originais premiados
+        - A SANS também desenvolve curso de segurança
+    Mitre
+        A Mitre corporation mantém uma lista de vulnerabilidades e exposições comuns (CVE) usadas por organizações de segurança proeminentes.
+    FIRST
+        O Forem of Incident Response and Security Teams(FIRST) é uma organização de seg que reúne uma variedade de equipes de resposta a incidentes de seg de computadores de organizações governamentais, comerciais e educacionais para promever a cooperação e coordenação no compartilhamento de informações, prevenção de incidentes e reação rápida
+    SecurityNewWire
+        Um portal de notícias de seg que agrega as últimas notícias relacionadas a alertas, explorações e vulnerabilidades
+    (ISC)2
+        O International Information Systems Security Certification Consortium (ICS)2 fornece produtos educacionais e serviços de carreira neutros para mais de 75000 profissionais do setor em mais de 135 países.
+    CIS
+        O Center for Internet Security (CIS) é um ponto focal para prevenção, proteção, resposta e recuperação de ameaças cibernéticas para governos estatuais, locais, tribais e territoriais (SLTT) por meio de multiState Information Sharing and Analysis Center (MS-ISAC). O MS-ISAC oferece avisos e avisos de ameaças cibernéticas 24h por dia, 7 dias por semana, identificação de vuln, mitigação e resposta a incidentes.
+
+2. Relatórios de seg ciber da cisco
+    Cisco Annual Cybersecurity Report e o Mid-Year Cybersecurity Report. Esses relatórios fornecem uma atualização sobre estado de preparação da seg, análise especializada das principais vuln, fatores por trás de explosão de ataques usando adware, spam e muito mais.
+
+obs.:
+    A Webroot é uma empresa de segurança digital que oferece uma gama de produtos e serviços de segurança para residências e empresas.
+
+    onde adware geralmente de esconde no windows?
+        %appdata%, e alguns em %temp5, %cache%, e %windir%
+
+    Quais algumas tendências em ransomware?
+        é mais frequentemente direcionado para alvos mais fracos e de maior valor. Os agentes de ameaças estão usando reconhecimento para identificar alvos com maior probabilidade de ficarem vuln.
+
+    quais são as tendências atuais de ataques de phishing?
+        As respostas vão variar. A capacidade de um hacker de obter acesso ao e-mail de uma pessoa continua com uma conversa legítima atual com um payload mal-intencionado anexado. O payload pode escapar de qualquer filtragem de e-mail. O uso de HTTPS em sites de phishing aumentou. Os ataques de phishing parecem seguir as notícias públicas sobre uma empresa ou o lançamento de um novo produto (I-Phone). Personificar novas empresas, incluindo a DocuSign e o Steam, oferece novos desafios para a assinatura de documentos digitais e atualizações automáticas de jogos.
+
+    por que dispositivos android são mais suscetíveis a problemas de segurança?
+        os dispositivos Android vêm pré-instalados com entre 100 e 400 aplicativos que podem estar vulneráveis. Esses aplicativos são conhecidos pelos agentes de ameaças como geralmente instalados e, portanto, são alvos prováveis.
+
+    Qual os malwares mais usados por hackers que atacam setor de serviço de saúde?
+        WITCHCOVEN e XtremeRAT.Os agentes de ameaças usam-na para capturar sistemas e organizações de computadores. XtremeRAT é uma ferramenta de acesso remoto (RAT) que pode carregar e baixar arquivos, interagir com o registro do Windows, manipular processos e serviços e capturar dados.
+    
+    Qual os malwares mais usados por hackers que atacam setor de serviço de energia?
+        As respostas variam, mas devem incluir SOGU em 41% e ADDTEMP em 20%. SOGU é um backdoor que pode carregar e baixar arquivos e fornecer acesso ao sistema de arquivos, ao registro, à configuração e ao shell remoto, entre outros. Ele usa um protocolo personalizado para fornecer acesso gráfico de C2 à área de trabalho do sistema.
+
+    4 ameaças cibernéticas do estado nacional?
+        China, da Rússia, da Coreia do Norte e do Irã.
+
+    Quais são os dois termos usados para descrever o malware ADDTEMP e como ele é disponibilizado?
+        também conhecido como Deserto Falcon e Arid Viper, pode ser entregue via Spear Phishing.

@@ -1,0 +1,101 @@
+1 Computação forense digital
+    Agora que investigou e identificou alertas válidos, o que faz com as provas? O analista de segurança cibernética irá inevitavelmente descobrir evidências de atividade criminosa. A fim de proteger a organização e prevenir o cibercrime, é necessário identificar os atores da ameaça, denunciá-los às autoridades competentes e fornecer provas para apoiar a acusação. Os analistas de segurança cibernética de nível 1 geralmente são os primeiros a descobrir delitos. Os analistas de segurança cibernética devem saber como lidar adequadamente com evidências e atribuí-la a atores ameaçadores.
+
+    A perícia digital é a recuperação e investigação de informações encontradas em dispositivos digitais no que diz respeito a atividades criminosas. Indicadores de comprometimento são a evidência de que ocorreu um incidente de segurança cibernética. Essas informações podem ser dados em dispositivos de armazenamento, na memória volátil do computador ou vestígios de cibercrime que são preservados em dados de rede, como pcaps e logs. É essencial que todos os indicadores de compromisso sejam preservados para análise futura e atribuição de ataques.
+
+    A atividade cibernética pode ser amplamente caracterizada como originária de dentro ou fora da organização. Investigações privadas estão preocupadas com indivíduos dentro da organização. Esses indivíduos poderiam simplesmente estar se comportando de maneiras que violam os acordos do usuário ou outras condutas não criminais. Quando indivíduos são suspeitos de envolvimento em atividades criminosas envolvendo roubo ou destruição de propriedade intelectual, uma organização pode optar por envolver autoridades policiais, caso em que a investigação se torna pública. Os usuários internos também poderiam ter usado a rede da organização para realizar outras atividades criminosas que não estão relacionadas à missão organizacional, mas estão em violação de vários estatutos legais. Neste caso, funcionários públicos realizarão a investigação.
+
+    Quando um invasor externo explora uma rede e rouba ou alterou dados, as evidências precisam ser coletadas para documentar o escopo da exploração. Vários órgãos reguladores especificam uma série de ações que uma organização deve tomar quando vários tipos de dados foram comprometidos. Os resultados da investigação forense podem ajudar a identificar as ações que precisam ser tomadas.
+
+    Por exemplo, de acordo com os regulamentos HIPAA dos EUA, se ocorrer uma violação de dados que envolva informações do paciente, a notificação da violação deve ser feita aos indivíduos afetados. Se a violação envolver mais de 500 pessoas em um estado ou jurisdição, a mídia, bem como os indivíduos afetados, devem ser notificados. A investigação forense digital deve ser usada para determinar quais indivíduos foram afetados e para certificar o número de indivíduos afetados para que a notificação apropriada possa ser feita em conformidade com os regulamentos HIPAA.
+
+    É possível que a própria organização possa ser objeto de uma investigação. Os analistas de segurança cibernética podem encontrar-se em contato direto com evidências forenses digitais que detalham a conduta dos membros da organização. Os analistas devem conhecer os requisitos relativos à preservação e tratamento de tais evidências. Se a intenção de destruir provas for estabelecida, poderá resultar em penalidades criminais para a organização e até mesmo para o analista de segurança cibernética.
+
+
+2 O Processo Forense Digital
+    É importante que uma organização desenvolva processos e procedimentos bem documentados para análise forense digital. A conformidade regulamentar pode exigir esta documentação, e essa documentação pode ser inspecionada pelas autoridades em caso de investigação pública.
+
+    A publicação especial do Guia para integração de tecnicas forenses para resposta a incidentes NIST 800-86 é um recurso valioso para organizações que precisam de orientação no desenvolvimento de planos forenses digitais. Por exemplo, ele recomenda que a computação forense seja realizada usando o processo de quatro fases.
+
+    A seguir, descreve as quatro fases básicas do processo forense de evidências digitais.
+    O Processo Forense de Evidências Digitais
+        - etapa1. Coleta
+            esta é a identificação de potenciais fontes de dados forenses e aquisição, manuseio e armazenamento desses dados. Este estágio é crítico porque deve-se ter especial cudiado para não danificar, perder ou omitir dados importantes.
+
+        - etapa2. exame
+            Isto implica avaliar e extrair informações relevantes dos dados recolhidos. Isso pode envolver descompressão ou descriptografia dos dados. Informações irrelevantes para a investigação podem precisar ser removidas. Identificar evidências reais em grandes coleções de dados pode ser muito difícil e demorado.
+
+        - etapa3. analise
+            Isto implica tirar conclusões dos dados. Características importantes, como pessoas, lugares, horários, eventos e assim por diante, devem ser documentadas. Esta etapa também pode envolver a correlação de dados de múltiplas fontes.
+
+        - etapa4. relatórios 
+            Isto implica preparar e apresentar informações que resultaram da análise. Os relatórios devem ser imparciais e explicações alternativas devem ser oferecidas, se apropriado. Limitações da análise e problemas encontrados devem ser incluídos. Sugestões para investigações adicionais e próximos passos também devem ser feitas.
+
+
+3. Tipos de evidências 
+    Em processos judiciais, as provas são amplamente classificadas como diretas ou indiretas. Provas diretas são evidências que estavam indiscutivelmente em posse do acusado ou são evidências de testemunhas oculares de alguém que observou diretamente o comportamento criminoso.
+    As evidências são ainda classificadas como:
+        - melhor evidência
+            Esta é uma evidência que está em seu estado original. Essas evidências podem ser dispositivos de armazenamento usados por um acusado ou arquivos de arquivos que podem ser comprovadamente inalterados.
+
+        - evidências corroborantes
+            Esta é uma evidência que apoia uma afirmação desenvolvida a partir das melhores evidências.
+
+        - evidencias indireta
+            Esta é uma evidência que, em combinação com outros fatos, estabelece uma hipótese. Isso também é conhecido como evidência circunstancial. Por exemplo, evidências de que um indivíduo cometeu crimes semelhantes podem apoiar a afirmação de que a pessoa cometeu o crime do qual é acusada.
+
+
+4. Ordem de coleta de evidências *******************************************
+    O IETF RFC 3227 fornece diretrizes para a coleta de evidências digitais. Descreve uma ordem para a recolha de provas digitais com base na volatilidade dos dados. Os dados armazenados na RAM são os mais voláteis e serão perdidos quando o dispositivo for desligado. Além disso, dados importantes na memória volátil podem ser substituídos por processos rotineiros da máquina. Portanto, a coleta de evidências digitais deve começar com as evidências mais voláteis e prosseguir para as menos voláteis, conforme mostrado na figura.
+    Prioridade de coleta de evidências, um exemplo da ordem de coleta de evidências mais volátil a menos volátil é o seguinte:
+        - Registros de memória, caches
+        - Tabela de roteamento, cache ARP, tabela de processos, estatísticas do kernel, RAM
+        - Sistemas de arquivos temporários
+        - Meios não voláteis, fixos e removíveis
+        - Registro remoto e monitoramento de dados
+        - Interconexões físicas e topologias
+        - Mídia de arquivo, fita ou outros backups
+
+5. Cadeia de Custódia
+    Embora as evidências possam ter sido coletadas de fontes que apoiam a atribuição a um indivíduo acusado, pode-se argumentar que as evidências podem ter sido alteradas ou fabricadas depois de coletadas. Para contrariar este argumento, deve ser definida e seguida uma cadeia de custódia rigorosa.
+
+    A cadeia de custódia envolve a coleta, o manuseio e o armazenamento seguro de evidências. Devem ser mantidos registros detalhados do seguinte:
+        Quem descobriu e recolheu as provas?
+        Todos os detalhes sobre o tratamento de evidências, incluindo horários, locais e pessoal envolvido.
+        Quem é o principal responsável pelas provas, quando a responsabilidade foi atribuída e quando a custódia mudou?
+        Quem tem acesso físico às evidências enquanto elas foram armazenadas? O acesso deve ser restrito apenas ao pessoal mais essencial.
+
+
+6. Integridade e preservação de dados
+    Ao coletar dados, é importante que eles sejam preservados em sua condição original. O registro de data e hora dos arquivos deve ser preservado. Por esta razão, as provas originais devem ser copiadas e a análise só deve ser realizada em cópias do original. Isto é para evitar perda acidental ou alteração das evidências. Como os registros de data e hora podem fazer parte das evidências, deve-se evitar abrir arquivos da mídia original.
+
+    O processo utilizado para criar cópias das provas utilizadas na investigação deve ser registado. Sempre que possível, as cópias devem ser cópias diretas em nível de bits dos volumes de armazenamento originais. Deve ser possível comparar a imagem do disco arquivado e a imagem do disco investigado para identificar se o conteúdo do disco investigado foi adulterado. Por esse motivo, é importante arquivar e proteger o disco original para mantê-lo em sua condição original e intocada.
+
+    A memória volátil pode conter evidências forenses, portanto, ferramentas especiais devem ser usadas para preservar essas evidências antes que o dispositivo seja desligado e as evidências sejam perdidas. Os usuários não devem desconectar, desconectar ou desligar máquinas infectadas, a menos que sejam explicitamente instruídos a fazê-lo pelo pessoal de segurança.
+
+    Seguir esses processos garantirá que qualquer evidência de irregularidade seja preservada e que quaisquer indicadores de comprometimento possam ser identificados.
+
+
+7. Atribuição de Ataque
+    Depois que a extensão do ataque cibernético for avaliada e as evidências coletadas e preservadas, a resposta ao incidente pode passar a identificar a origem do ataque. Como sabemos, existe uma ampla gama de agentes de ameaças, desde indivíduos descontentes, hackers, cibercriminosos e gangues criminosas, até estados-nação. Alguns criminosos agem de dentro da rede, enquanto outros podem estar do outro lado do mundo. A sofisticação do crime cibernético também varia. Os estados-nação podem empregar grandes grupos de indivíduos altamente treinados para realizar um ataque e esconder seus rastros, enquanto outros agentes de ameaças podem se gabar abertamente de suas atividades criminosas.
+
+    Atribuição de ameaça refere-se ao ato de determinar o indivíduo, organização ou nação responsável por um incidente de intrusão ou ataque bem-sucedido.
+
+    A identificação de agentes de ameaças responsáveis deve ocorrer por meio de investigação sistemática e baseada em princípios das evidências. Embora possa ser útil também especular sobre a identidade dos agentes de ameaças identificando possíveis motivações para um incidente, é importante não deixar que isso influencie a investigação. Por exemplo, atribuir um ataque a um concorrente comercial pode afastar a investigação da possibilidade de que uma gangue criminosa ou um estado-nação tenha sido responsável.
+
+    Em uma investigação baseada em evidências, a equipe de resposta a incidentes correlaciona Táticas, Técnicas e Procedimentos (TTP) que foram usados no incidente com outras explorações conhecidas. Os cibercriminosos, assim como outros criminosos, têm características específicas que são comuns à maioria de seus crimes. Fontes de inteligência de ameaças podem ajudar a mapear o TTP identificado por uma investigação para fontes conhecidas de ataques semelhantes. No entanto, isso destaca um problema com a atribuição de ameaças. Evidências de crimes cibernéticos raramente são evidências diretas. Identificar semelhanças entre TTPs para agentes de ameaças conhecidos e desconhecidos é uma evidência circunstancial.
+
+    Alguns aspectos de uma ameaça que podem auxiliar na atribuição são a localização dos hosts ou domínios de origem, os recursos do código usado no malware, as ferramentas usadas e outras técnicas. Às vezes, no nível de segurança nacional, as ameaças não podem ser atribuídas abertamente porque isso exporia métodos e capacidades que precisam ser protegidos.
+
+    Para ameaças internas, a gestão de ativos desempenha um papel importante. Descobrir os dispositivos a partir dos quais um ataque foi lançado pode levar diretamente ao agente da ameaça. Endereços IP, endereços MAC e logs DHCP podem ajudar a rastrear os endereços usados no ataque até um dispositivo específico. Os logs AAA são muito úteis nesse sentido, pois rastreiam quem acessou quais recursos de rede em que momento.
+
+8. A estrutura MITRE ATT&CK
+    Uma maneira de atribuir um ataque é modelar o comportamento dos agentes de ameaças. A estrutura MITRE Adversarial Tactics, Techniques & Common Knowledge (ATT&CK) permite detectar táticas, técnicas e procedimentos (TTP) de invasores como parte da defesa contra ameaças e atribuição de ataques. Isso é feito mapeando as etapas de um ataque para uma matriz de táticas generalizadas e descrevendo as técnicas usadas em cada tática. As táticas consistem nos objetivos técnicos que um atacante deve atingir para executar um ataque e as técnicas são os meios pelos quais as táticas são realizadas. Por fim, os procedimentos são as ações específicas tomadas pelos agentes de ameaças nas técnicas que foram identificadas. Procedimentos são o uso documentado de técnicas no mundo real por agentes de ameaças.
+
+    O MITRE ATT&CK Framework é uma base de conhecimento global sobre o comportamento dos agentes de ameaças. Ele se baseia na observação e análise de explorações do mundo real com o propósito de descrever o comportamento do invasor, não o ataque em si. Ele foi projetado para permitir o compartilhamento automatizado de informações, definindo estruturas de dados para a troca de informações entre sua comunidade de usuários e o MITRE.
+
+    A figura mostra uma análise de uma exploração de ransomware do excelente sandbox online ANY.RUN. As colunas mostram as táticas da matriz de ataque empresarial, com as técnicas usadas pelo malware organizadas sob as colunas. Clicar na técnica lista detalhes dos procedimentos usados pela instância específica do malware com uma definição, explicação e exemplos da técnica.
+
+    Nota: Faça uma pesquisa na internet sobre MITRE ATT&CK para saber mais sobre esta ferramenta.
+
+    Matriz MITRE ATT&CK para uma exploração de ransomware

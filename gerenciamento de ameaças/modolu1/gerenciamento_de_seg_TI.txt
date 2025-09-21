@@ -1,0 +1,44 @@
+Doze dominios de segurança digital  
+    a ISO / IEC 27000 é uma série de padrões de segurança da informação ou melhores práticas para ajudar as empresas a melhorar a segurança da informação.Publica pela International Organization for Standardization (ISO) e pela International Electrotechnical Commission (ICO), os padrões ISo 27000 estabelecem requisitos abrangente do sistema de gerenciamento de segurança da informação (ISMS). Um ISMS consiste em todos os controles administrativos, técnicos e operacioanis para manter a informação segura dentro de uma empresa.
+
+
+    Doze domínios independentes representam os componentes do padrão ISO 27000:
+        1.Avaliação de risco:
+            Esse processo determina o valor quantitativo e qualitativo de risco relacionado a uma situação específica ou ameaça reconhecida.
+        2.Política de segurança: 
+            Um documento que aborda as limitações e os comportamentos dos membros de uma empresa e muitas vezes especifica como os dados podem ser acessados e quais dados podem ser acessados por quem.
+        3.Organização de segurança da informação: 
+            Este é o modelo de governança estabelecidade por uma empresa para a segurança da informação
+        4.Gerenciamento de ativos: 
+            É um inventário do esquema de classificação dos ativos da informação.
+        5.Segurança de recursos humanos: 
+            Contempla os procedimentos de segurança no que diz respeito aos funcionários que são adminitos, transferidos e demitidos de uma empresa.
+        6.Segurança física e ambiental: 
+            Refere-se à proteção física das informações e das instalações de uma empresa.
+        7.Gerenciamento de operações e comunicações: 
+            Descreve a gestão de controles técnicos de segurança em sistemas e redes.
+        8.Aquisição, desenvolvimento e manuntenção de sistemas da informação:
+            Isso se refere à segurança como parte integrante dos sistemas de informação de uma empresa
+        9.Controle de acesso:  
+            Isso descreve como uma empresa restringe os direitos de acesso a redes, sistemas, funções de aplicativos e dados para impedir o acesso de usários não autorizados.
+        10.Gerenciamento de incidentes de segurança da informação:
+            Descreve como antecipar e responder a violações de segurança da informação.
+        11.Gerenciamento de continuidade de negócios:
+            Isso descreve a capacidade de uma empresa de proteger, manter e recuperar atividades essenciais aos negócios após uma interrupção nos sistemas de informação.
+        12.Conformidade:
+            Descreve o processo de assegurar a conformdiade com políticas, normas e regulamentos de segurança da informação
+
+
+
+Objetivos do controle de seus controles
+    Esses doize domínios são compostos de objetivos de controle (ISO 27001) e Controles (ISO 27002)
+
+    Objetivos de controle: definem os requisitos de alto nível para implementar um sistemas abrangente e gerenciamento de seg. de info. em uma empresa.
+
+    controle: definem como atingir os objetivos de controle de uma empresa.
+
+    por exemplo:
+        Objetivo de controle é controlar o acesso às redes usando os mecanismos de autenticação apropriados para usuários e equipamentos.
+        Um controle relevante, portando, é usar senhas fortes que consistem em pelo menos 8 caracteres e uma combinação de letras maiúsculas e minúsculas, números e símbolos.
+
+    o Center for Intenet Security (cis) desenvolveu um conjunto de controles de segurança essenciais para ajudar empresas com diferentes níveis de recursos e conheciemento

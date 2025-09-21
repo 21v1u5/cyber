@@ -1,0 +1,17 @@
+ferramentas de soft usadas para realizar testes de rede:
+    Nmap/zenmap
+        é usado para descobrir computadores e seus serviçoes em uma rede,criando,portando, um mapa de rede
+    SuperScan
+        soft de varredura de porta é projetado para detectar as portas abrir TCP e UDP, determinar quais serviçoes estão sendo executados nessas portas e execute consultas, como pesquisa Whois, Ping, Traceroute e HostName
+    SIEM
+        fornecer relatórios em tempo real e análise de longo prazo de eventos de seg
+    GFI LANguard
+        Este é um scaner de rede de seg que detecta vuln
+    TripWire
+        avalia e valida configurações de TI contra políticas internas, padrões de conformidade e as melhores práticas de seg
+    Nessus
+        soft de varredura de vuln, com foco em acesso remoto, miscigurações e DOS contra a pilha TCP/IP
+    L0phtCrack
+        Aplicativo de auditoria e recuperação de senha
+    Metasploit
+        fornece informações sobre vuln e ajuda em testes de penetração e desenvolvimento de assisnaturas IDs

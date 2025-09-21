@@ -1,0 +1,28 @@
+4.1 Test de penetração    
+    método de testar áreas de fraquezas em sistemas usando várias técnicas maliciosas simulando um ataque real de um invasor para obter acesso não autorizado. É importante observar que o pentest não é o mesmo de teste de vuln, que apenas identifica possíveis problemas.
+
+    O pentest envolve invadir um site, rede ou servidor com permissão de uma empresa para obter acesso a recursos usando vários métodos que os hackers black-hat da vida real usariam.
+
+4.2 Fase de penetração  
+    1.Planejamento(administrativo)
+        Estabelece as regras de compromisso para a realização do test
+    2.Descoberta
+        Realização de reconhecimento sobre o alvo para obter informações, podendo ser técnicas passivas ou reconhecimento ativo.
+    3.Ataque
+        procurar obter acesso ou penetrar no sistema usando as info coletadas na fase anterior. tenta escalar privilégio, movimentar lateralmente, criar pesistência e limpar rastros.
+    4.Geração de relatórios
+        entrega da documentação detalhada que inclui as vuln identificadas, as ações tomadas e resultados.
+
+
+4.3 bug bount, empresas podem pagar pessoas que reportarem as falhas pra elas sem precisar serem contratadas de forma direta
+
+4.4 Analisador de pacotes
+    interceptam e registram o tráfego de rede. Eles executam as funções abaixo para solução de problemas ou comprometer dados:
+        análise de problemas de rede
+        Detecção de tentativas de invasão de rede
+        Isolamento do sistemas explorado
+        Log de tráfego
+        Detecção de uso indevido da rede
+
+4.5 Saída do analisador de protoclo
+    Sniffing é semelhante a espionar alguém. Eles ocorrem quando os invasores examinam todo o tráfego de rede à medida que passa pela placa de rede, independentemente de se o tráfego é endereçado a eles ou não. Os criminosos conseguem fazer sniffing de rede com um software, hardware ou uma combinação dos dois.

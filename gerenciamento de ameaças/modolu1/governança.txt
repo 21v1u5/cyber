@@ -1,0 +1,58 @@
+GOVERNANÇA
+	Governança de sec de ti determina quem está autorizado a tomar decisões sobre riscos de segurança sibernética dentro de uma organização
+
+	Diferente de gerenciamento de sec de TI, que define e implementa os controles que uma organização precisa ter em vigor para mitigar riscos.
+	Diferente de governança de dados, em particular determina quem está autorizado a tomar decisões sobre dados dentro de uma organização.
+
+	Existem  vários papéis importantes em bons programas de governança de dados:
+		-Data owner (Proprietário dos dados): 
+			uma pessoa que garente a conformidade com políticas e procedimentos, atribui a classificação adequada aos ativos de informação e determina os critérios para acessar os ativos de informação.
+	
+		-Data controller (Controlador dos dados): 
+			Uma pessoa que determina as finalidades e a forma como os dados pessoais são tratados.
+	
+		-Data Processor (Processador de dados): 
+			Uma pessoa ou organização que processa dados pessoais em nome do controlador de dados
+	
+		-Data custodian (Custodiante de dados): 
+			Uma pessoa que implementa a classificação e os controles de segurança dos dados de acordo com as regras estabelecidas pelo proprietário dos dados. Em outras palavras, os custodiantes dos dados são responsáveis pelo controle técnico dos dados.
+	
+		-Data steward (Administrador de dados): 
+			Uma pessoa que garante que os dados dão suporte às necessidades comerciais de uma organização e atendem aos requisitos regulatórios.
+	
+		-Data protection officer (Oficial de proteção de dados): 
+			Uma pessoa que supervisiona a estratégia de proteção de dados de uma organização.
+
+Políticas de segurança cibernéticas
+		-> Uma política de seg cib é um documento de alto nível que descreve a visão de uma organização para a seg. ciber. Como:
+			-demonstra o compromisso de uma oganização com a segurança
+			-define os padrões de comportamento e requisitos de segurança para a execução de atividades, processos e operações, e para a proteção de ativos de tecnologia e informação dentro de uma organização
+			-garante que a aquisição, o uso e a manuntenção das operações do sistema, software e hardware sejam consistentes em toda a organização
+			-define as conseguencias legais das violações de politicas
+			-da à equipe de seg. o apoio que ela precisa de alta administração
+
+		Existem vários tipos de políticas de seg. ciber.:
+			- cybersecurity policy(politica de ciber.seg.)
+			- setting up your firewall policy(configurando sua politica de firewall)
+			- email and internet acceptable use policy(politica aceitavel de usuario de email e internet)
+
+tipos de politicas de segurança
+	politica de identificação e autenticação
+	Pol. de senhas
+	pol. de utilização aceitavel 
+	pol. de acesso remoto
+	pol. de manutenção de rede
+	pol. de  tratamento de incidentes
+	pol. de dados
+	pol. de credenciais
+	pol. corporativo
+
+
+resumo:
+	A governança da segurança de TI determina quem está autorizado a tomar decisões sobre os riscos à segurança digital em uma empresa. Ela demonstra a responsabilidade e supervisiona para garantir que os riscos sejam adquadamentes mitigados e que as estratégias de segurança estejam alinhadas aos objetivos comerciais da empresa e estejam em conformidade com as regulamentações. Bons programas de administração de dados têm um diretor de proteção, proprietário, controlador, processador, guardião dos dados e responsável pelos dados. Uma política de segurança digital é um documento de alto nível que descreve a visão de uma empresa sobre segurança digital, incluindo suas metas, necessidades, escopo e responsabilidades. As políticas de alto nível de segurança digital incluem: uma política primária, uma política específica do sistema e uma política específica do problema. As políticas de segurança específicas incluem: ID e autenticação, senha, uso aceitável, manutenção de rede, tratamento de incidentes, dados, credenciais e organizacional. Os princípios norteados dos recursos humanos para a governança da segurança digital incluem: Verificação de antecedentes, integração / não embarque, limpeza de mesa, necessidades de saber, separação de tarefas, férias obrigatórias e rotações de trabalho.
+
+
+
+
+
+

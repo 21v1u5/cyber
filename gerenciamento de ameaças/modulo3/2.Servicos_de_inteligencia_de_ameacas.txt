@@ -1,0 +1,47 @@
+
+Cisco Talos
+    Coleta de informações sobre ameaças ativas, existentes e emergentes
+
+FireEye
+    usa abordagem em 3 vertentes que combina inteligencias em seg, experiencia em seg e tecnlogias. Ele elabora todos os estagios de um ciclo de vida de ataque com um mecanismo sem assinatura que utiliza análise de ataque stateful para detectar ameaças do dia zero.
+
+Compartilhamento automatizado de indicadores
+    Departamento de seg interna dos EUA (DHS) oferece serviço gratuito chamado compartilhamento automatizado de incador(AIS). O AIS permite a troca em tempo real de indicadores de ameaças cibernéticos (endereços IP maliciosos, o endereço do remetente de um e-mail de phishing.)
+    O AIS cria um ecossistema onde, assim qeu uma ameaça é reconhecida, ela é imediatamente compartilhada com a comunidades para ajuda-la a proteger
+
+
+Banco de dados de vulnerabilidades e exposições comuns (CVE)
+    O governo dos Estados Unidos patrocinou uma MITER corporation para criar um catálogo de seg de Vulnerabilidades e Exposiçao comuns (CVE). O CVE serve como um dicionário de nomes comuns para vuln de seg ciber publicamente conhecidas
+
+    O programa CVE é um esforço internacional orientado pela comunidade para catalogar vulnerabilidades de acordo com as regras e diretrizes do esforço.
+
+    A MITRE corporation define identificadores CVE exclusivos para vuln de seg da info publicamente conhecidas para facilitar o compartilhamento de dados
+
+Padrões de comunicação de inteligencia contra ameaças 
+    3 padrões comuns de compartilhamento de info sobre ameaças:
+        - Expressão de informações Estruturadas de Ameaças (STIX)
+            Este é um conjunto de especificações para a troca de informações sobre ameaças ciber entre organizações. O padrão Cyber Observable Expression (CybOX) foi incoporado ao STIX
+        - Troca Confiável de automatizado de informações de Indicadores (TAXII)
+            Esta é a especificação de um protocolo da camada de aplicativo que permite a comunicação de CTI sobre HTTPS. TAXII foi projetado para suportar STIX.
+        - CybOX
+             Este é um conjunto de esquemas padronizados para especificar, capturar, caracterizar e comunicar eventos e propriedades de operações de rede que oferecem suporte a muitas funções de segurança cibernética.
+
+    Esses padrões abertos fornecem as especificações que auxiliam na troca automatizada de informações de inteligência de ameaças cibernéticas em um formato padronizado. 
+
+    A Malware Information Sharing Platform (MISP) é uma plataforma de código aberto para compartilhar indicadores de comprometimento para ameaças recém-descobertas. O MISP é apoiado pela União Europeia e usado por mais de 6.000 organizações em todo o mundo. O MISP permite o compartilhamento automatizado de IOCs entre pessoas e máquinas usando STIX e outros formatos de exportação.
+
+
+Plataformas de inteligência de ameaças
+    Como vimos, existem muitas fontes de informações de inteligência de ameaças, cada uma das quais pode ter seu próprio formato de dados. Acessar e usar várias fontes de inteligência de ameaças pode consumir muito tempo. Para ajudar o pessoal de segurança cibernética a fazer o melhor uso da inteligência de ameaças, as plataformas de inteligência de ameaças (TIP) foram desenvolvidas.
+
+    Uma plataforma de inteligência de ameaças centraliza a coleta de dados de ameaças de várias fontes e formatos de dados. Existem três tipos principais de dados de inteligência de ameaças. O primeiro são indicadores de compromisso (IOC). O segundo são ferramentas, técnicas e procedimentos (TTP). A terceira são as informações de reputação sobre destinos ou domínios da Internet.
+
+
+obs.:
+    O SIEM alertou que ouvi um download suspeito de um ip, voce usou o wireshark para encontrar o que foi baixado "http://185.244.41.29/ooiwy.pdf" , voce exportou para HTTP e depois gerou o valor hash SHA256 do arquivo com "sha256sum" para gerar o hash
+        pesquisa o hash no virustotal
+        no cisco talos
+
+            pesquisou se é malware ou nao
+            quais os nomes conhecidos pra essa hash
+            quais maquinas de destino

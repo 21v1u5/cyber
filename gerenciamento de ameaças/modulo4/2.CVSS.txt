@@ -1,0 +1,124 @@
+1. Visão geral do CVSS
+    O Common Vulnerability Scoring System (CVSS) é uma ferramenta de avaliação de risco projetada para transmitir os atributos comuns e a gravidade das vulnerabilidades em sistemas de hardware e software de computador. A terceira revisão, CVSS 3.0, é uma estrutura aberta e neutra do fornecedor, padrão do setor, para ponderar os riscos de uma vulnerabilidade usando uma variedade de métricas. Esses pesos combinam-se para fornecer uma pontuação do risco inerente a uma vulnerabilidade. A pontuação numérica pode ser usada para determinar a urgência da vulnerabilidade e a prioridade de abordá-la. Os benefícios do CVSS podem ser resumidos da seguinte forma:
+
+        - Ele fornece pontuações padronizadas de vulnerabilidade que devem ser significativas em todas as organizações.
+        - Ele fornece uma estrutura aberta com o significado de cada métrica abertamente disponível para todos os usuários.
+        - Ele ajuda a priorizar o risco de uma forma que seja significativa para organizações individuais.
+
+    O Fórum de Equipes de Resposta a Incidentes e Segurança (FIRST) foi designado como guardião do CVSS para promover sua adoção globalmente. O padrão Versão 3 foi desenvolvido com contribuições da Cisco e de outros parceiros do setor. 
+
+
+2. Grupos métricos CVSS
+    Muitas das métricas abordam o papel do que o CVSS chama de autoridade. Uma autoridade é uma entidade de computador, como um banco de dados, sistema operacional ou caixa de proteção virtual, que concede e gerencia acesso e privilégios aos usuários.
+
+    O CVSS usa três grupos de métricas para avaliar a vulnerabilidade:
+        Base:
+            Isso representa as características de uma vulnerabilidade que são constantes ao longo do tempo e em contextos. Ele tem duas classes de métricas:
+                - Explorabilidade- Esses são recursos da exploração, como vetor, complexidade e interação do usuário exigidas pela exploração.
+                - Métricas de impacto - Os impactos da exploração estão enraizados na tríade de confidencialidade, integridade e disponibilidade da CIA.
+        temporal:
+            Isso mede as características de uma vulnerabilidade que pode mudar ao longo do tempo, mas não em ambientes de usuário. Ao longo do tempo, a gravidade de uma vulnerabilidade mudará à medida que for detectada e serão desenvolvidas medidas para combatê-la. A gravidade de uma nova vulnerabilidade pode ser alta, mas diminuirá à medida que patches, assinaturas e outras contramedidas forem desenvolvidas.
+        ambiental:
+            Isso mede os aspectos de uma vulnerabilidade que estão enraizados no ambiente de uma organização específica. Essas métricas ajudam a classificar as consequências dentro de uma organização e permitem o ajuste de métricas menos relevantes para o que uma organização faz.
+
+3. Grupo métrico básico do CVSS
+    Lista dos critérios para métricas de explorabilidade:
+        - vetor de ataque
+            Essa é uma métrica que reflete a proximidade do agente de ameaça ao componente vulnerável. Quanto mais distante o agente estiver do componente, maior será a gravidade. Atores de ameaças próximos à sua rede ou dentro de sua rede são mais fáceis de detectar e mitigar.
+        - complexidade do ataque
+            Esta é uma métrica que expressa o número de componentes, software, hardware ou redes, que estão além do controle do invasor e que devem estar presentes para uma vuln seja explorada com sucesso
+        - Privilégios obrigatórios
+            Esta é uma métrica que captura o nível de acesso necessário para uma exploração bem-sucedidade da vuln
+        - Interação de usuário
+            Essa métrica expressa a presença ou ausência do requisito de interação do usuário para que uma exploração seja bem sucedida
+        - Escopo
+            Essa métrica expressa se várias autoridades devem estar envolvidas em uma exploração. Isso é expresso como se a autoridade inicial muda para uma segunda autoridade durante a exploração.
+
+    Lista dos critérios para métricas de impacto:
+        - Impacto de confidencialidade
+            impacto na falta de limitação de acesso a apenas usuários autorizados
+        - impacto de integridade
+            impacto da falta de confiabilidade e autenticidade das informações
+        - impacto de disponibilidade
+            impacto da falta de acessibilidade da info e recursos de rede. Ataques que consomem largura de banda de rede, ciclos de processador ou espaço em disco afetam a disponibilidade
+
+
+4. O processo de CVSS
+    O CVSS Base Metrics Group foi projetado como uma forma de avaliar vulnerabilidades de segurança encontradas em sistemas de software e hardware. Ele descreve a gravidade de uma vulnerabilidade com base nas características de uma exploração bem-sucedida da vulnerabilidade. Os outros grupos de métricas modificam a pontuação de gravidade base, contabilizando como a classificação de gravidade base é afetada por fatores de tempo e ambientais.
+
+    A calculadora é como um questionário no qual são feitas escolhas que descrevem a vulnerabilidade para cada grupo de métricas. Depois que todas as escolhas são feitas, uma pontuação é gerada. O texto pop-up que explica cada métrica e valor métrico é exibido passando o mouse sobre cada um. As opções são feitas escolhendo um dos valores para a métrica. Apenas uma escolha pode ser feita por métrica.
+
+    A calculadora CVSS pode ser acessada na parte CVSS do site FIRST.
+
+    Um guia detalhado do usuário que define critérios métricos, exemplos de avaliações de vulnerabilidades comuns e a relação de valores métricos com a pontuação final está disponível para dar suporte ao processo.
+
+    Para que uma pontuação seja calculada para os grupos de métricas Temporal ou Ambiental, o grupo Métrica Base deve primeiro ser concluído. Em seguida, os valores de métrica Temporal e Ambiental modificam os resultados da Métrica Base para fornecer uma pontuação geral. 
+
+
+5. Relatórios CVSS
+    Frequentemente, as pontuações do grupo de métricas Base e Temporal serão fornecidas aos clientes pelo aplicativo ou fornecedor de segurança em cujo produto a vulnerabilidade foi descoberta. A organização afetada completa o grupo de métricas ambientais para adaptar a pontuação fornecida pelo fornecedor ao contexto local.
+
+    A pontuação resultante serve para orientar a organização afetada na alocação de recursos para resolver a vulnerabilidade. Quanto maior a classificação de gravidade, maior o impacto potencial de uma exploração e maior a urgência em abordar a vulnerabilidade. Embora não sejam tão precisos quanto os escores numéricos do CVSS, os rótulos qualitativos são muito úteis para se comunicar com os stakeholders que não conseguem se relacionar com os escores numéricos.
+
+    Em geral, qualquer vulnerabilidade que exceda 3.9 deve ser resolvida. Quanto maior o nível de classificação, maior a urgência para remediação.
+
+6. Outras fontes de informações sobre vulnerabilidades
+    Existem outras fontes importantes de informações sobre vulnerabilidades. Estes trabalham em conjunto com o CVSS para fornecer uma avaliação abrangente da gravidade da vulnerabilidade. Existem dois sistemas que operam nos Estados Unidos:
+
+    Vulnerabilidades e exposições comuns (CVE)
+        Este é um dicionário de nomes comuns, na forma de identificadores CVE, para vulnerabilidades conhecidas de segurança cibernética. O identificador CVE fornece uma maneira padrão de pesquisar uma referência a vulnerabilidades.
+
+    National Vulnerability Database (NVD)
+        Isso utiliza identificadores CVE e fornece informações adicionais sobre vulnerabilidades, como pontuações de ameaças CVSS, detalhes técnicos, entidades afetadas e recursos para investigação adicional. O banco de dados foi criado e é mantido pela agência do National Institute of Standards and Technology (NIST) do governo dos EUA.
+
+
+exercicios:
+    O que significa NCATS?
+        Avaliações nacionais de segurança cibernética e serviços técnicos
+
+    O que é o Serviço de verificação de vulnerabilidades da Cyber Higiene?
+        É um serviço gratuito de avaliação de vulnerabilidades fornecido pela Agência de segurança de segurança digital e segurança (CISA) do Departamento de segurança nacional dos EUA.
+
+    Quais outros serviços de segurança digital estão disponíveis no NCATS?
+        Além da varredura de vulnerabilidade da Cyber Higiene, o NCATS oferece a Avaliação de campanhas de phishing, Avaliação de risco e vulnerabilidade e Validação de projeto de arquitetura.
+
+    Para quem esses serviços estão disponíveis?
+        Governos federais, estaduais, locais, tribais e territoriais e organizações de infraestrutura essenciais dos setores público e privado nos EUA.
+
+    Qual é o objetivo do relatório?
+        Ajudar as empresas a fortalecer sua postura de segurança.
+
+    Em que seção do relatório você pode encontrar uma visão geral de alto nível dos resultados da avaliação, incluindo algumas comparações de desempenho semanal?
+        Boletim informativo sobre a higiene cibernética
+
+    Onde você pode encontrar uma lista detalhada de descobertas e recomendar mitigações para cada vulnerabilidade?
+        Apêndice C
+    
+    O que permite abrir facilmente os resultados da digitalização em uma planilha ou em outro documento tabular?
+        No Apêndice G, os arquivos s separados por vírgulas (CSV) são fornecidos para essa finalidade.
+
+    Qual porcentagem dos hosts verificados foram considerados vulneráveis? Como isso se compara à verificação anterior?
+        10%, ou 393, hosts foram considerados vulneráveis. Isso significa 44 hosts a menos do que a verificação anterior.
+    
+    As vulnerabilidades são classificadas por gravidade. Qual nível de gravidade representa o maior número de hosts recentemente vulneráveis?
+        Outros 108 hosts foram recentemente identificados como tendo vulnerabilidades de gravidade média.
+
+    Que tipo de vulnerabilidade requer mais tempo para a empresa mitigar?
+        A empresa leva um tempo médio de 158 dias para reduzir uma vulnerabilidade de nível médio.
+
+    A verificação incluiu 293.005 endereços IP, mas avaliou apenas 3.986 hosts. Por que você acha que isso é?
+        A organização de exemplo forneceu acesso a um espaço de endereço de 293.005 endereços, mas, no momento da verificação, apenas 3.986 estavam ativos e acessíveis para a verificação.
+
+    Descreva a avaliação de vulnerabilidade realizada pelo NCCIC, inclusive como ela foi realizada, as ferramentas utilizadas e uma breve descrição dos resultados.
+        O NCCIC oferece um serviço gratuito de varredura de vulnerabilidades para organizações governamentais e do setor privado qualificadas. A verificação é feita de forma remota e periódica. Os relatórios dos resultados estão disponíveis para os beneficiários. Os relatórios podem ser usados para descobrir vulnerabilidades, preparar tendências e atualizações semanais e orientar na mitigação de vulnerabilidades. O NCCIC usa o Nmap para criar um mapa de rede no qual os hosts são identificados e o Nessus para verificar se há vulnerabilidades nos hosts identificados. Os relatórios incluem vários detalhes, tabelas e gráficos para ajudar a comunicar aos beneficiários os problemas de segurança na rede que exigem atenção. Cada vulnerabilidade é classificada por gravidade de acordo com a pontuação do CVSS.
+
+    Como os nomes de vulnerabilidade são úteis para investigações futuras?
+        Os nomes de vulnerabilidade correspondem a uma referência mantida pela Tenable, a empresa que oferece o Nessus. A referência de Tenable fornece mais detalhes sobre as vulnerabilidades e muitas vezes fornece links para outras fontes para obter mais informações. A referência de Tenable também fornece links para especificações de CVE para a vulnerabilidade. A Tenable também fornece os vetores CVSS para a vulnerabilidade.
+
+    Forneça três ações que você pode adotar, com base nas informações fornecidas em um relatório de higiene cibernética.
+        As respostas variam. Alguns exemplos são:
+
+            -Use o relatório para identificar vulnerabilidades críticas que devem ser abordadas imediatamente.
+            -Identificar hosts que exigem medidas de mitigação para lidar com vulnerabilidades, especialmente se o host tiver várias vulnerabilidades.
+            - Identificar vulnerabilidades que são compartilhadas por muitos hosts na rede.
+            - Recomendar soluções centralizadas, como sistemas de gerenciamento de patches, para reduzir a probabilidade de vulnerabilidades críticas ou de alta gravidade aparecerem na rede.

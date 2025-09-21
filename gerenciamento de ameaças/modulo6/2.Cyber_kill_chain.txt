@@ -1,0 +1,138 @@
+1. etapas da Cyber Kill Chain
+    A Cyber Kill Chain foi desenvolvida pela Lockheed Martin para identificar e prevenir intrusões cibernéticas. Existem sete etapas para a Cyber Kill Chain. Concentrar-se nessas etapas ajuda os analistas a entender as técnicas, ferramentas e procedimentos dos agentes de ameaças. Ao responder a um incidente de segurança, o objetivo é detectar e interromper o ataque o mais cedo possível na progressão da cadeia de destruição. Quanto mais cedo o ataque for interrompido, menos dano será causado e menos o invasor aprenderá sobre a rede alvo.
+
+    A Cyber Kill Chain especifica o que um invasor deve completar para atingir seu objetivo. As etapas da Cyber Kill Chain são mostradas na figura.
+
+    Se o atacante for parado em qualquer estágio, a cadeia de ataque será quebrada. Quebrar a corrente significa que o defensor frustrou com sucesso a intrusão do agente da ameaça. Os agentes de ameaças só terão sucesso se concluírem a Etapa 7.
+
+    Nota: Ator de ameaça é o termo usado ao longo deste curso para se referir à parte que instiga o ataque. No entanto, a Lockheed Martin usa o termo “adversário” em sua descrição da Cyber Kill Chain. Portanto, os termos adversário e ator de ameaça são usados indistintamente neste tópico.
+
+
+1.1 Reconhecimento 
+(Em que etapa o ator da ameaça reúne inteligência e seleciona alvos?)
+    Reconhecimento ocorre quando o agente de ameaça realiza pesquisas, reune informações e seleciona alvos. Isso informará ao agente de ameaça se vale a pena realizar o ataque. Qualquer info pública pode ajudar a determinar o que, onde e como do ataque será realizado. Ha muitas info disposniveis publicamente, especialmente para organizações maiores, incluindo artigos de notícias, sites, conferencias e dispositivos de rede voltados para o público. Quantidades crescentes de info sobre funcionário estão disponíveis nas rede sociais.
+
+    O agene de ameaça escolherá alvos que forem negligenciados ou desprotegidos porque terão maior probabilidade de serem penetrados e comprometidos. Todas info obtidas pelo agente de ameaça são revisadas para determinar sua importancia e se revelam possíveis vias adicionais de ataque
+
+    tática adversária (planejar e conduzir pesquisas):
+        - coletar endereços de email 
+        - identique funcionários nas redes sociais
+        - colete todas as info de relações pública
+        - descubra servidores voltados para a internet
+        realize varreduras da rede para identificar endereços IP e portas abertas
+        
+    Defesa sociais(descubra a intenção do adversário):
+        - alertas de log web e dados de pesquisa históricos
+        - analise do navegador de mineração de dados
+        crie manuais para detectar comportamentos
+        priorize a defesa em torno de tecnologias e pessoas que a atividade de reconhecimento vias
+
+
+1.2 armamento 
+(Em que etapa o ator da ameaça usa vulnerabilidades dos ativos que foram descobertos e os transforma em uma ferramenta?)
+    O objetivo desta etapa é usar informações do reconhecimento para desenvolver uma arma contra sistemas específicos ou individuais na organização. Para desenvolver essa arma, o designer usará as vuln dos ativos que forem descobertos e os construirá em uma ferramenta que pode ser implantada. Depois que a ferramentas foi usada, espera-se que o ator de ameaça tenha alcançado seu objetivo de obter acesso ao sistema ou rede de destino, degradando a integridade de um alvo ou toda a rede. O agente de ameaça examinará ainda mais a seg da rede e dos ativos para expor fraquezas adicionais, obter controle sobre outros ativos ou implantar ataques adicionais.
+
+    não é dificil escolher uma arma para o ataque. O agente da ameaça precisa analisar quais ataques estão disponíveis para as vuln que eels descobriram. Existem muitos ataques que ja foram criados e testados em geral. um problema é que, como esses ataques são tão conhecidos, eles são provavelmente também conhecidos pelos defensores. Muitas vezes, é mais eficaz usar um ataque de dia zero para evitar métodos de detecção. Um ataque de dia zero usa uma arma que é desconhecida para os defendores e sistemas de seg de rede. O ator pode querer desenvolver sua própria arma que é especificamente projetada para evitar detecção, usando as info sobre a rede e os sistemas que eels aprenderam. Os atacantes aprenderam a criar inúmeras variantes de seus ataques para evitar as defesas da rede.
+
+        ataque(preprar e encenar a operação):
+            obtenha uma ferramenta automatizada para entregar a carga de malware
+            selecione ou crie um documento para apresentar a vitima
+            selecione ou crie um backdoor a uma infraestrutura de comando e controle
+        SOc(detecte e colete artefatos de armamento):
+            certifique-se de que as regras e assinaturas do IDS estejam atualizadas
+            realiza uma análise completa de malware
+            construa detecções para o comportamento de armadores conhecidos
+            o malware é antigo, 'pronto para uso' ou novo malware que pode indicar um ataque personalizado?
+            colete arquivos e metadados para análise futura
+            determine which weaponizer artifacts are common to which campaigns
+
+
+1.3 entrega 
+(Em que etapa a arma é transmitida ao alvo através do uso de um site, mídia USB removível, um anexo de e-mail ou por outros meios?)
+    Durante esta etapa, a arma é transmitida ao alvo usando um vetor de entrega. Isso pode ser através do uso de um site, mídia USB removível ou um anexo de e-mail. Se a arma não for entregue, o ataque não terá sucesso. O agente da ameaça usará muitos métodos diferentes para aumentar as chances de entregar a carga útil, como criptografar comunicações, fazer com que o código pareça legítimo ou ofuscar o código. Os sensores de segurança são tão avançados que podem detectar o código como malicioso, a menos que ele seja alterado para evitar a detecção. O código pode ser alterado para parecer inocente, mas ainda assim executar as ações necessárias, mesmo que possa demorar mais tempo para ser executado.
+
+    red:(Lançar o malware no alvo):
+        * Direto contra servidores web
+        * Entrega indireta através de:
+        * Email Malicioso
+        * Malware no pendrive
+        * Interações nas redes sociais
+        * Sites comprometidos
+
+    soc(Bloquear a entrega de malware):
+        * Analise o caminho de infraestrutura usado para entrega.
+        * Inferir a intenção do adversário com base na segmentação.
+        * Colete e-mails e logs da web para reconstrução forense.
+        * Entenda os servidores, pessoas e dados direcionados disponíveis para ataque.
+
+
+1.4 exploração 
+(Em que etapa o ator da ameaça explora a vulnerabilidade e obtém o controle do alvo?)
+    Depois que a arma foi entregue, o ator ameaça a usa para quebrar a vulnerabilidade e ganhar o controle do alvo. Os destinos de exploração mais comuns são aplicativos, vulnerabilidades do sistema operacional e usuários. O atacante deve usar uma exploração que ganhe o efeito que deseja. Isso é muito importante porque se a exploração errada for conduzida, obviamente o ataque não funcionará, mas efeitos colaterais não intencionais, como um DoS ou várias reinicializações de sistema, causarão atenção indevida que poderia facilmente informar os analistas de segurança cibernética sobre o ataque e as intenções do ator da ameaça
+
+    red(Explore uma vulnerabilidade para obter acesso):
+        * Use software, hardware ou vulnerabilidade humana
+        * Adquira ou desenvolva o exploit
+        * Use uma exploração acionada por adversários para vulnerabilidades do servidor
+        * Use uma exploração acionada pela vítima, como abrir um anexo de e-mail ou um link da Web malicioso
+
+    soc(Treine funcionários, proteja o código e proteja os dispositivos):
+        * Treinamento de conscientização de segurança dos funcionários e testes periódicos de e-mail
+        * Treinamento do desenvolvedor da Web para proteger o código
+        * Verificação regular de vulnerabilidades e testes de penetração
+        * Medidas de endurecimento do endpoint
+        * Auditoria de endpoint para determinar forensemente a origem da exploração
+
+
+1.5 instalação
+    Esta etapa é onde o ator ameaça estabelece um backdoor para o sistema para permitir o acesso contínuo ao alvo. Para preservar esse backdoor, é importante que o acesso remoto não alerte analistas ou usuários de segurança cibernética. O método de acesso deve sobreviver através de verificações antimalware e reinicialização do computador para ser eficaz. Esse acesso persistente também pode permitir comunicações automatizadas, especialmente eficazes quando vários canais de comunicação são necessários ao comandar uma botnet.
+
+    red(Instale o backdoor persistente):
+        * Instale o webshell no servidor web para acesso persistente.
+        * Crie um ponto de persistência adicionando serviços, chaves de AutoRun, etc.
+        * Alguns adversários modificam o carimbo de data/hora do malware para que ele apareça como parte do sistema operacional.
+
+    soc(Detecte, registre e analise a atividade de instalação):
+        •HIPS para alertar ou bloquear caminhos de instalação comuns.
+        * Determine se o malware requer privilégios elevados ou privilégios de usuário
+        * Auditoria de endpoint para descobrir criações anormais de arquivos.
+        * Determine se o malware é uma ameaça conhecida ou uma nova variante.
+
+
+1.6 comando e controle 
+(Em que etapa o ator de ameaça usa um método de comunicação, como o IRC, para emitir comandos para o software instalado no destino?)
+    Nesta etapa, o objetivo é estabelecer comando e controle (CNC ou C2) com o sistema de destino. Os hosts comprometidos geralmente se sinalizam da rede para um controlador na Internet. Isso ocorre porque a maioria dos malwares requer interação manual para exfiltrar dados da rede. Os canais CNC são usados pelo ator de ameaças para emitir comandos para o software que eles instalaram no destino.
+    O analista de segurança cibernética deve ser capaz de detectar comunicações CNC para descobrir o host comprometido. Isso pode ser na forma de tráfego não autorizado de Internet Relay Chat (IRC) ou tráfego excessivo para domínios suspeitos.
+
+    red(Abrir o Canal para manipulação de alvos):
+        * Abrir o canal de comunicação bidirecional para a infraestrutura CNC
+        * Canais CNC mais comuns sobre protocolos da web, DNS e e-mail
+        * A infraestrutura CNC pode ser de propriedade do adversário ou de outra rede vítima
+
+    soc(Última chance de bloquear a operação):
+        • Pesquise possíveis novas infraestruturas CNC
+        * Descubra a infraestrutura CNC através da análise de malware
+        * Isole o tráfego DNS para servidores DNS suspeitos, especialmente DNS dinâmico
+        * Evite o impacto bloqueando ou desativando o canal CNC
+        * Consolide o número de pontos de presença na Internet
+        * Personalize o bloqueio de regras de protocolos CnC em proxies da web
+
+1.7 ações sobre objetivos
+    O passo final da Cyber Kill Chain descreve o ator ameaçador alcançar seu objetivo original. Isso pode ser roubo de dados, realizar um ataque DDoS ou usar a rede comprometida para criar e enviar spam ou mina Bitcoin. Neste ponto, o ator ameaça está profundamente enraizado nos sistemas da organização, escondendo seus movimentos e cobrindo seus rastros. É extremamente difícil remover o agente de ameaça da rede.
+
+    red(Colha as recompensas de um ataque bem-sucedido):
+        * Coletar credenciais do nusuario
+        * Escalonamento de privilégios
+        * Reconhecimento interno
+        * Movimento lateral através do ambiente
+        * Colete e exfiltrar dados
+        * Destruir sistemas
+        * Substituir, modificar ou corromper dados
+
+    soc(Detectar usando evidências forenses):
+        * Estabeleça um manual de resposta a incidentes
+        * Detecte exfiltração de dados, movimento lateral e uso não autorizado de credenciais
+        * Resposta imediata do analista para todos os alertas
+        * Análise forense de endpoints para triagem rápida
+        * Capturas de pacotes de rede para recriar a atividade
+        * Faça uma avaliação de danos

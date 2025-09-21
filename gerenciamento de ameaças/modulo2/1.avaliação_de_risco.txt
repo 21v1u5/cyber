@@ -1,0 +1,69 @@
+Scanner de vulnerabilidades
+    valia computador, sistemas de computador, redes e aplicações. em busca de ponto fracos.
+    Os scanners de vulnerabilidades ajudam a automatizar auditoriade segurança ao buscar riscos de segurança na rede.
+
+    Scanner procuram as seguintes vulnerabilidades:
+        uso de senhas padrão ou senhas comunicações 
+        patches não instalados
+        portas abertas
+        erro de configuração de software e de sistemas operacionais
+        Endereçamento IP ativos, incluindo dispositivos inesperados conectados
+
+    Mais famosos Nessus, retina, core impact e GFI Languard, incluem
+        executar a auditoria de conformidade
+        proporcionar patches e atualizações
+        identificar configurações erradas 
+        suportar dispositivos móveis e sem fio 
+        rastrear malware
+        identificar dados confidenciais
+
+    Tipos de varreduras:
+        ao avaliar um scanner, analise como ele é classificado com relação a precisão, confiabilidade, escalabilidades e geração de relatórios. Podem ser software ou na nuvem.
+
+        categorias de scanner:
+            de rede: 
+                Sondam os hosts em busca de portas abertas, enumeram informações sobre usuários e grupos e buscam vulnerabilidades conhecidas na rede.
+            de aplicativos:
+                Acessam o código-fonte do aplicativo para testar uma aplicação de dentro para fora (eles nao exeuctam a aplicação)
+            verificadores de aplicativos web:
+                identificam vulnerabilidades em aplicativos da web
+
+        varreduras invasivas e credenciadas:
+            invasivas tentam explorar vuln e podem até travar o alvo, enquanto uma verificação não invasiva tentará não causar danos no alvo
+
+            Em uma verificação credenciada, nomes de usuários e senhas fornecem acesso autorizado a um sistema, permitindo que o scanner colete mais informações.No entendo, todos os tipos de verificador pordem indentificar por engano uma vuln que não existem. Isso é conhecido como falso positvo, mas não identificar uma vuln atual é falso negativo. As credenciadas reotrnam menos falso negativo e menos falsos positivos. Você precisa analisar todos os logs e configurações para cuidar de todas as vulnerabilidades que exigem atenção.
+
+    Utilitários de diagnóstico de linhas de comando:
+        podem ser usadas para avaliar a posião de seg. de uma empresa:
+            ipconfig:
+                exibe as configurações de TCP/IP (endereço IP, máscara de sub-rede, gateway padrão, informações de DNS e MAC[ifconfig é o equivalente no MAX/Linux])
+            ping:
+                testa a conectividade de rede enviando uma solicitação de ICMP a um host e determina se uma rota está disponível para um host
+            arp:
+                fornece uma tabela que mapeia endereços MAC conhecidos para seu endereço IP associado e é uma maneira rápida de encontrar o endereço MAC de um dispositivo final
+            tracert:
+                rastreia a rota que um pacote segue até um até um destino e registra os saltos ao longo do caminho, ajudando a localizar onde um pacote está sendo pendurado (rota de tracerout é o equivalente para linux e mac)
+            nslookup:
+                consulta um servidor DNS para ajudar a solucionar problemas de um banco de dados DNS (dig é o equivalente em mac/linux)
+            netstat:
+                exibe todas as portas nas quais um computador está escutando e pode determinar conexões ativas
+            nmap:
+                é usado em auditoria de segurança. Ele localiza hosts de rede, detecta sistemas operacionais e identifica serviços.
+            netcat:
+                coleta informações de conexões de rede TCO e UDP e pode ser usado para varredura de porta, monitoramento, captura de banners e cópia de arquivos.
+            hping:
+                monta e analise pacotes e é usado para varredura de portas, descoberta de caminhos, impressão digital do sistemas operacional e testes de firewall
+            nbtstat
+                Ferramenta para resolver problemas de nomes de NetBios 
+
+    automoção e segurança   
+        SIEM: 
+            identificar ameação
+            monitore a atividade e o uso de recurso
+            realizar relatórios de conformidade para auditorias
+            suporte à resposta a incidentes
+        SOAR:
+            Gestão de ameaças e vulnerabilidades
+            Resposta a incidentes de Segurança
+            Automação de operações de segurança
+            
